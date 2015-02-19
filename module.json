@@ -1,0 +1,12 @@
+{
+  "id": "ldap_thumbnail",
+  "name": "LDAP Thumbnail",
+  "description": "Pulls user pictures from ldap",
+  "keywords": ["ldap", "user"],
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Ole Rößner"
+    }
+  ]
+}
