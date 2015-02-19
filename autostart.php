@@ -3,12 +3,15 @@ Yii::app()->moduleManager->register(
     [
         'id'           => 'ldap_thumbnail',
         'class'        => 'application.modules.ldap_thumbnail.LdapThumbnailModule',
-        'import' => array(
-            'application.modules.ldap_thumbnail.*',
-        ),
+        'import' => [
+            'application.modules.ldap_thumbnail.services.*',
+        ],
         // Events to Catch
-        'events' => array(
-            array('class' => 'User', 'event' => 'onAfterSave', 'callback' => array('LdapThumbnailModule', 'handleLdapUser')),
-        ),
+        'events' => [
+            ['class'    => 'User',
+             'event'    => 'onAfterSave',
+             'callback' => ['LdapUserProfileImageHandler', 'handleLdapUser']
+            ],
+        ],
     ]);
 ?>
