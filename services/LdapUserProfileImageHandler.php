@@ -40,6 +40,7 @@ class LdapUserProfileImageHandler
             if (!file_exists($profileImage->getPath())) {
                 $file = $this->storeProfileImage($thumbnailPhoto);
                 $profileImage->setNew($file);
+                @unlink($file)
             }
         }
     }
