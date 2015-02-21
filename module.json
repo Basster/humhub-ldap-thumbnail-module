@@ -3,7 +3,7 @@
   "name": "LDAP Thumbnail",
   "description": "Pulls user pictures from ldap",
   "keywords": ["ldap", "user"],
-  "version": "0.2.0",
+  "version": "0.2.1",
   "authors": [
     {
       "name": "Ole Rößner"
