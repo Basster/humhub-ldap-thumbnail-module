@@ -24,7 +24,7 @@ class LdapThumbnailAttributeForm extends CFormModel
     public function attributeLabels()
     {
         return [
-            'ldapAttribute' => Yii::t('LdapThumbnailModule.forms_LdapThumbnailAttributeForm', 'LDAP Attribute'),
+            'ldapAttribute' => Yii::t('LdapThumbnailModule.forms', 'label.attribute'),
         ];
     }
 
